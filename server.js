@@ -12,5 +12,5 @@ const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir);
 
 sequelize.sync().then(() => {
- app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+ app.listen(8000, () => console.log('Server running on http://localhost:8000'));
 });
